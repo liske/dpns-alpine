@@ -1,0 +1,19 @@
+#!/sbin/openrc-run
+
+
+description="Docker Pull & Save"
+
+extra_commands="save panic"
+extra_started_commands="reload"
+
+depend() {
+    need docker
+    need net
+    need localmount
+}
+
+start() {
+    ebegin "Loading docker images"
+    dpns-run
+    eend $?
+}
