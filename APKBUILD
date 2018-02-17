@@ -1,7 +1,7 @@
 # Contributor: Thomas Liske <thomas@fiasko-nw.net>
 # Maintainer: Thomas Liske <thomas@fiasko-nw.net>
 pkgname=dpns
-pkgver=0.2
+pkgver=0.3
 pkgrel=0
 pkgdesc="docker pull & save"
 url="https://github.com/liske/dpns"
@@ -27,4 +27,4 @@ package() {
     cp -v dpns "$pkgdir/etc/init.d/"
 }
 
-sha512sums="1dd1eb06c859ac1299df65fe96b26fe98a641df0fdb0dfcd27e1f0bce3b981f2bc3ebe7e39c68184eb84d0861f62fbd1a83da15f12beb9d6395e698fd9ef4ccc  dpns-0.2.zip"
+sha512sums="fbc38010cf62186eac72872794ba35f30bf3d04f1b871c847429f0b5e687b860f1ae6499123eff4e07c46e7ec6cee30f231e2382085f9965302202efcf8736b4  dpns-0.3.zip"
